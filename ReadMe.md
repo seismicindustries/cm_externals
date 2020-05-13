@@ -83,7 +83,7 @@ CM MK1.5 input pin legend:
 
 
 
-## switch inputs (alternative): cm_switch
+## cm_switch - switch inputs (alternative)
 the external is applicaple to the same inputs as the cm_input one.
 
 - left outlet: puts out the time the switch is held down for (once it's released, in milliseconds).
@@ -101,7 +101,7 @@ the external is applicaple to the same inputs as the cm_input one.
 ====================================================================================
 
 
-**compile with:**
+**compile instructions**
 
 `gcc -std=c99 -O3 -Wall -c [name_of_external].c -o [name_of_external].o`
 `ld --export-dynamic -shared -o [name_of_external].pd_linux [name_of_external].o -lc -lm -lwiringPi`
