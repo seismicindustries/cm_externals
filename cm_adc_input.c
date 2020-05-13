@@ -16,6 +16,20 @@
  * edit mxmxmx: adapted for mcp3208 / terminal tedium
  *
  * ****************************************************************************/
+/*
+raffi - seismic industries - mai 2020
+-------------------------------------
+adapted to spi2 (/dev/spidev1.1) 
+
+add the following to your /boot/config.txt to use the external
+-> dtoverlay=spi1-3cs
+
+check with:
+-> ls /dev/sp*
+
+*/
+
+
 #include "m_pd.h"
 #include <unistd.h>
 #include <stdint.h>
