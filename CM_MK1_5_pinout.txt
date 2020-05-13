@@ -1,0 +1,51 @@
+CM GPIO Table
+*************
+
+GPIO	Function	  Device / Usage                            according pd external
+---------------------------------------------------------------------------------
+0	    ENC1_SW	    encoder 1	                                cm_digital_input
+1	    ENC1_B      encoder 1	                                cm_digital_input
+2	    i2c_sda	    codec configuration / i2c expansion
+3	    i2c_scl	    codec configuration / i2c expansion
+4	    ENC1_A	    encoder 1	                                cm_digital_input
+5	    DISP_LED	  display led pin
+6	    DISP_DC     display data/command pin
+7	    DISP_RST	  display reset pin
+8	    SPI0_CE0	  display chip select
+9	    spi0_miso	  display miso pin
+10    spi0_mosi	  display mosi pin
+11    spi0_clk	  display spi clock pin
+12    enc2_b	    encoder 2                                 cm_digital_input
+13    enc2_a	    encoder 2	                                cm_digital_input
+14	  tx0	        serial expansion
+15	  rx0	        serial expansion
+16	  enc2_sw     encoder 2	                                cm_digital_input
+17	  -	          unused
+18	  i2s_sck	    codec
+19	  i2s_lrck    codec
+20	  i2s_sin	    codec
+21	  i2s_sout    codec
+22	  -	          unused
+23	  -	          unused
+24	  -	          unused
+25	  -	          unused
+26	  -	          unused
+27	  -	          unused
+28	  enc3_b      encoder 3	                                cm_digital_input
+29	  enc3_a      encoder 3	                                cm_digital_input
+30	  enc3_sw	    encoder 3	                                cm_digital_input
+31	  enc4_b	    encoder 4	                                cm_digital_input
+32	  enc4_a	    encoder 4	                                cm_digital_input
+33	  enc4_sw	    encoder 4	                                cm_digital_input
+34	  clk_1	      digital output 1	                        cm_digital_output
+35	  clk_2	      digital output 2	                        cm_digital_output
+36	  tr4	        digital input 4	                          cm_switch
+37	  tr3	        digital input 3	                          cm_switch
+38	  tr2	        digital input 2	                          cm_switch
+39	  tr1	        digital input 1	                          cm_switch
+40	  spi2_miso	  mcp3208 spi interface data (cv ADC chip)
+41	  spi2_mosi	  mcp3208 spi interface data (cv ADC chip)
+42	  spi2_clk	  mcp3208 spi interface data (cv ADC chip)
+43	  spi2_ce0	  mcp3208 spi interface data (cv ADC chip)
+44	  spi2_ce1	  -
+45	  spi2_ce2	  -
