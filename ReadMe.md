@@ -30,9 +30,14 @@ externals are or will be converted to use the bcm2835 library, since wiringpi is
  
 ## gate outputs: cm_output
 inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation arguments gives the pin number, where 
-- GPIO_num = 12, 16 (Gate OUT 1 & 2)
-- GPIO_num = 26 (LED near Button3)
+
+CM MK1.5 output pin legend (CM MK1.5):
+----------------------
+- gpio 34 = CLK1 output
+- gpio 35 = CLK2 output
+
 ```
+   |   
    |   
    |   
    |   
@@ -43,16 +48,35 @@ inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation argument
 
 
 
-## gate/button/nav-button inputs: cm_input
-where:
-- GPIO_num = 22, 6, 5, 13 (up, down, left, right)
-- GPIO_num = 4, 17, 35 (trig 1-3)
-- GPIO_num = 23, 24, 25 (btn 1-3) 
-outputs bang.
+## encoder pins and trigger inputs: cm_digital_input
+
+CM MK1.5 input pin legend:
+- enc1s   gpio0
+- enc1a   gpio4
+- enc1b   gpio1
+
+- enc2s   gpio16
+- enc2a   gpio13
+- enc2b   gpio12
+
+- enc3s   gpio30
+- enc3a   gpio29
+- enc3b   gpio28
+
+- enc4s   gpio33
+- enc4a   gpio32
+- enc4b   gpio31
+
+- trig1   gpio39
+- trig2   gpio38
+- trig3   gpio37
+- trig4   gpio36
+
 ```
  ***************
  * cm_input 17 *
  *---***********
+   |
    |
    |
    |
