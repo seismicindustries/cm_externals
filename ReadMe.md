@@ -17,16 +17,14 @@ externals are or will be converted to use the bcm2835 library, since wiringpi is
                \    |   |-----------\
                  \  |  /
                    \|/   
-                  *---*************
-                  * cm_adc_input  *
-                  *-*-*-*-*-*-*-*-*
+                  *---*****************************
+                  * cm_adc_input                  *
+                  *---*---*---*---*---*---*---*---*
 ```
-- message < open > opens the SPI device. reads ADC when banged. 
 - message < open_adc > opens the SPI device. reads ADC when banged. 
 
-- **NB:** plain `[open(` is for use with the wm8731 version (in which case, we only need to read 6 ADC channels). use `[open adc(` for use with the pcm5102a version (in which case all 8 channels need to be read):
-
 - the ADC object has **two additional methods**, `[smooth(` and `[deadband(`. if the ADC is jittery, you can use those to smooth over some of that. for instance, `[smooth 4(` will average over four input samples,  `[smooth 8(` over eight, etc (available values are 1x, 2x, 4x, 8x, 16x); `[deadband(` takes values from 0-5. default is: `smooth` = 1x, `deadband` = 0. 
+
 
 
  
@@ -44,6 +42,7 @@ inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation argument
 ```
 
 
+
 ## gate/button/nav-button inputs: cm_input
 where:
 - GPIO_num = 22, 6, 5, 13 (up, down, left, right)
@@ -58,6 +57,7 @@ outputs bang.
    |
    |
 ```
+
 
 
 ## switch inputs (alternative): cm_switch
