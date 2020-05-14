@@ -30,7 +30,7 @@ Externals are, or will be converted to use the bcm2835 library, since wiringpi i
 
  
 ## cm_digital_output - gate outputs
-inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation arguments gives the pin number, where 
+inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation argument gives the pin number. 
 
 CM MK1.5 output pin legend (CM MK1.5):
 - gpio 34 = CLK1 output
@@ -42,13 +42,13 @@ CM MK1.5 output pin legend (CM MK1.5):
    |   
    |   
  *---************
- * cm_output 12 *
+ * cm_output 34 *
  ****************
 ```
 
 
 
-## cm_digital_input - encoder pins and trigger inputs
+## cm_digital_input - all encoder pins and the four trigger inputs
 
 CM MK1.5 input pin legend:
 - enc1s   gpio0
