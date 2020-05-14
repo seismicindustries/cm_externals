@@ -60,8 +60,8 @@ void *cm_switch_new(t_floatarg _pin)
 	t_cm_switch *x = (t_cm_switch *)pd_new(cm_switch_class);
 	x->x_clock = clock_new(x, (t_method)cm_switch_tick);
 	// valid pin? extended to all possible input pins - also allows to detect PW on trig inputs, and longpresses on the menu buttons
-    if (_pin == 36 || _pin == 37 || _pin == 38 || _pin == 39 ) x->pinNum = _pin;    // pins adapted to CM MK1.5 - raffi 2020.05.12
-	else x->pinNum = 36; // default to pin 36
+    if (_pin == 0 || _pin == 4 || _pin == 1 || _pin == 16 || _pin == 13 || _pin == 12 || _pin == 30 || _pin == 29 || _pin == 28 || _pin == 33 || _pin     == 32 || _pin == 31 || _pin == 39 || _pin ==38 || _pin == 37 || _pin == 36) x->pinNum = _pin;    // pins adapted to CM MK1.5 - raffi 2020.05.12
+	else x->pinNum = 0; // default to pin 0
 	// init 
 	x->clkState = 1;
 	x->switchState = 0;

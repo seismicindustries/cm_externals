@@ -1,6 +1,7 @@
-externals for mcp3208 ADC + GPIO / COMPUTEMODULE 
-===========================================================
-externals are or will be converted to use the bcm2835 library, since wiringpi is unfortunately deprecated by now.
+Externals for the ComputeModule MK1.5 
+=====================================
+using the MCP3208 as ADC chip and the GPIO's from the raspberryPI Computemodule to interface.
+Externals are, or will be converted to use the bcm2835 library, since wiringpi is unfortunately deprecated by now.
 
 ## ADC: cm_adc_input - NOT YET CONVERTED - still uses the kernel device but should be moved to bcm2835 as well
 ```
@@ -73,7 +74,7 @@ CM MK1.5 input pin legend:
 
 ```
  ***************
- * cm_input 17 *
+ * cm_input 39 *
  *---***********
    |
    |
@@ -84,7 +85,7 @@ CM MK1.5 input pin legend:
 
 
 ## cm_switch - switch inputs (alternative)
-the external is applicaple to the same inputs as the cm_input one.
+the external is applicaple to the same inputs as the cm_digital_input one.
 
 - left outlet: puts out the time the switch is held down for (once it's released, in milliseconds).
 - right outlet: push = < 1 > / release = < 0 >.
@@ -96,6 +97,9 @@ the external is applicaple to the same inputs as the cm_input one.
    |          |
    |          |
 ```
+
+
+
 
 
 ====================================================================================
