@@ -22,7 +22,7 @@ Externals are, or will be converted to use the bcm2835 library, since wiringpi i
                   * cm_adc_input                  *
                   *---*---*---*---*---*---*---*---*
 ```
-- message < open_adc > opens the SPI device. reads ADC when banged. 
+- message `[open_adc(` opens the SPI device. reads ADC when banged. 
 
 - the ADC object has **two additional methods**, `[smooth(` and `[deadband(`. if the ADC is jittery, you can use those to smooth over some of that. for instance, `[smooth 4(` will average over four input samples,  `[smooth 8(` over eight, etc (available values are 1x, 2x, 4x, 8x, 16x); `[deadband(` takes values from 0-5. default is: `smooth` = 1x, `deadband` = 0. 
 
